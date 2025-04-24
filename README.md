@@ -26,16 +26,6 @@ This project implements an **Agentic Retrieval-Augmented Generation (AgenticRAG)
 
 ---
 
-## 📚 Example Use Case
-
-**User Input:**
-What are the 5 pointers to make a human live a happy life?
-
-**System Output:**
-The 5 pointers to make a human live a happy life are practicing gratitude, spending time with friends and family, getting outside in nature, helping others, and practicing smiling. These activities can increase happiness and life satisfaction. Meditation and planning a trip can also contribute to rewiring the brain for happiness.
-
-## 🧭 Workflow Overview
-
 The workflow is orchestrated as a stateful agent graph:
 
 ```mermaid
@@ -46,3 +36,16 @@ graph TD
     Retrieve -->|Not Relevant| Rewrite
     Rewrite --> Agent
     Generate --> End
+```
+
+---
+
+## 📚 Example Use Case
+
+**User Input:**
+What are the 5 pointers to make a human live a happy life?
+
+**System Output:**
+The 5 pointers to make a human live a happy life are practicing gratitude, spending time with friends and family, getting outside in nature, helping others, and practicing smiling. These activities can increase happiness and life satisfaction. Meditation and planning a trip can also contribute to rewiring the brain for happiness.
+
+## 🧭 Workflow Overview
